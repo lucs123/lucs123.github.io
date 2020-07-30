@@ -1,0 +1,36 @@
+:root{
+    --background-color: #151c1d;
+    --text-color: #969a9b;
+}
+
+html, body{
+	padding: 0;
+	/* margin: 1em; */
+    scroll-behavior: smooth; 
+    background-color: var(--background-color);
+}
+
+main{
+    width: 700px;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    margin-top: 100px;
+    /* display: grid; */
+}
+header{
+    display: grid;
+    text-align: left;
+    align-content: start;
+} */
+
+.title{
+    /* margin-left: 2em; */
+    /* min-height: 10em; */
+    /* font-family: 'Mulish', sans-serif; */
+}
+
+h2,h3,p{
+    font-family: courier, monospace;
+    color: var(--text-color);
+}
