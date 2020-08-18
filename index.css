@@ -1,5 +1,6 @@
 :root{
     --background-color: #151c1d;
+    /* --background-color: #ffffff; */
     --text-color: #969a9b;
 }
 
@@ -7,9 +8,9 @@
 html, body{
 /*   margin: 0; */
 	padding: 0;
-  margin: 1px;
+  /* margin: 1px; */
   height: 100%;
-/*   width: 100%; */
+  /* width: 100%; */
 	/* margin: 1em; */
   scroll-behavior: smooth; 
   background-color: var(--background-color);
@@ -27,7 +28,7 @@ html, body{
 }
 
 header{
-    display: grid;
+    /* display: grid; */
     text-align: left;
     align-content: start;
 } */
@@ -80,7 +81,27 @@ p{
 
 .container{
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1.5fr 3fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: 'title image'
+                        'presentation image';
+}
+
+.project-title{
+  grid-area: title;
+  position: relative;
+}
+.project-presentation{
+  grid-area: presentation;
+}
+
+.project-image{
+  grid-area: image;
+  align-self: center;
+  justify-self: center;
+  max-width: 75%;
+  height:auto;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0);
 }
 
 .s2-title{
@@ -88,9 +109,6 @@ p{
     /* justify-items: center; */
 } 
 
-.project-title{
-  position: relative;
-}
 
 .scroll-down {
 	position: absolute;
