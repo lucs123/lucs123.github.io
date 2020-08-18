@@ -80,6 +80,7 @@ p{
 }
 
 .container{
+  margin: 45px;
   display: grid;
   grid-template-columns: 1.5fr 3fr;
   grid-template-rows: 1fr 5fr;
