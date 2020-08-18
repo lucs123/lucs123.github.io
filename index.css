@@ -39,7 +39,7 @@ header{
     /* font-family: 'Mulish', sans-serif; */
 }
 
-h2,h3,p{
+h2,h3,p,a{
     font-family: "Courier New", courier, monospace;
     color: var(--text-color);
     font-weight: lighter;
