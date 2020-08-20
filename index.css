@@ -10,10 +10,8 @@
 html, body{
   margin: 0;
 	padding: 0;
-  /* margin: 1px; */
   height: 100%;
   width: 100%;
-	/* margin: 1em; */
   scroll-behavior: smooth; 
   background-color: var(--background-color);
 }
@@ -25,7 +23,6 @@ html, body{
   float: right;
   margin-top: 10px;
   margin-right: 20px;
-  /* font-size: small; */
 }
 
 .project-links{
@@ -34,21 +31,49 @@ html, body{
   position: relative;
   text-align: center;
   padding-top: 100px;
-  /* justify-items: center; */
+  text-decoration: none;
 }
 
+.link{
+  position: relative;
+  text-decoration: none;
+}
+
+.link:after{
+  content: '';
+  position: relative;
+  width: 0; height: 0.5px;
+  display: block;
+  margin-top: 1px;
+  left: 0;
+  width: 23%;
+  background: black;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+ 
+.link:hover:after{
+  width: 100%;
+  background: black;
+}
+
+.project-links b{
+  color: black;
+  opacity: 0.8;
+  font-weight: bolder;
+  font-variant-numeric: slashed-zero;
+  margin-right: 4px;
+  /* text-decoration: underline; */
+}
 .presentation{
     max-width: 700px;
     margin: 0 auto;
     align-content: center;
     justify-content: center;
     padding-top: 140px;
-    /* display: grid; */
-    /* min-height: 29em; */
 }
 
 header{
-    /* display: grid; */
     text-align: left;
     align-content: start;
 } 
@@ -58,29 +83,23 @@ h2,h3,p,a{
     font-family: "Courier New", courier, monospace;
     color: var(--text-color);
     font-weight: lighter;
-    /* color: white; */
     margin: 10px;
 }
 a{
   font-size: small;
-  /* text-decoration: none; */
 }
 
 h2,h3{
-  /* font-size: x-large; */
   color: white;
 }
 
 .s1{
     height: 99%;
-    /* width: 100%; */
     margin-top: 15px;
     margin-left: 10px;
     margin-bottom: 2px;
     position: relative;
-/*     min-height: auto; */
     overflow: auto;
-    /* box-sizing: border-box; */
 }
 
 .s2{
