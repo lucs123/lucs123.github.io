@@ -13,6 +13,7 @@ html, body{
   height: 100%;
   width: 100%;
   scroll-behavior: smooth; 
+  scroll-snap-type: block proximity;
   background-color: var(--background-color);
 }
 
@@ -94,6 +95,7 @@ h2,h3{
 }
 
 .s1{
+    scroll-snap-align: start;
     height: 99%;
     margin-top: 15px;
     margin-left: 10px;
@@ -103,7 +105,8 @@ h2,h3{
 }
 
 .s2{
-  /*border-top: 0.5px groove #000;*/
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   position: relative;
   margin-top: 0;
   background-color: var(--secondary-color);
