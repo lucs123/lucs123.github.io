@@ -177,6 +177,13 @@ footer p{
   border-bottom: 1px solid var(--text-color);
 }
 
+.contact-btn{
+  /* background-color: transparent; */
+  /* border: 0; */
+  /* border-bottom: 1px solid var(--text-color); */
+  color: var(--text-color);
+}
+
 .close {
   position: relative;
   float: right;
