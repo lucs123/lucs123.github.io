@@ -48,11 +48,11 @@ anime.timeline({ loop: false })
 })
 
 const linksWrapper = document.querySelectorAll('.link');
-linksWrapper.forEach(link => {
-  link.innerHTML = link.textContent.replace(/\S/g, "<span class='letter'>$&</span>");})
-console.log(linksWrapper)
+// linksWrapper.forEach(link => {
+//   link.innerHTML = link.textContent.replace(/\S/g, "<span class='letter'>$&</span>");})
+// console.log(linksWrapper)
 
-const targets = ['.link .letter', '.title', 'a']
+const targets = ['.link', '.title', 'a']
 anime.timeline({ loop: false })
   .add({
     targets: targets,
