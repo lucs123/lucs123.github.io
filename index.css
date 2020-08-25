@@ -6,33 +6,6 @@
 
 /* *{border: 1px solid red;} */
 
-.ml11 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  /* padding-right: 0.02em; */
-  padding-bottom: 0.15em;
-}
-
-.ml11 .line {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  height: 80%;
-  width: 1px;
-  background-color: #fff;
-  transform-origin: 0 50%;
-}
-
-.ml11 .line1 { 
-  top: 0; 
-  left: 0;
-}
-
-.ml11 .letter {
-  display: inline-block;
-  line-height: .05em;
-}
 
 html, body{
   margin: 0;
@@ -80,6 +53,34 @@ html, body{
   left: 0;
   width: 100%;
   background: var(--text-color);
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  /* padding-right: 0.02em; */
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 80%;
+  width: 1px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: .05em;
 }
 
 .project-links{
@@ -168,7 +169,7 @@ h2,h3{
   scroll-snap-align: start;
   scroll-snap-stop: always;
   position: relative;
-  margin-top: 0;
+  margin-top: 0;  
   background-color: var(--secondary-color);
   padding-top: 20px;
   padding-bottom: 10px;
@@ -187,6 +188,8 @@ h2,h3{
 */
 .container{
   margin: 45px;
+  margin-inline-start: 100px;
+  margin-inline-end: 100px;
   display: grid;
   grid-template-columns: 1.5fr 3fr;
   grid-template-rows: 1fr 5fr;
@@ -202,10 +205,14 @@ h2,h3{
   grid-area: presentation;
 }
 
-.project-image{
+.img-container{
   grid-area: image;
   align-self: start;
   justify-self: center;
+}
+
+.project-image{
+  float: right;
   max-width: 75%;
   height:auto;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0);
@@ -213,6 +220,8 @@ h2,h3{
 
 .project3-container{
   margin: 45px;
+  margin-inline-start: 100px;
+  margin-inline-end: 100px;
   display: grid;
   grid-template-columns: 1.5fr 3fr;
   grid-template-rows: 1fr 3fr;
