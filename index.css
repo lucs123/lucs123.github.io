@@ -133,6 +133,8 @@ html, body{
     align-content: center;
     justify-content: center;
     padding-top: 140px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 header{
@@ -203,6 +205,8 @@ h2,h3{
 }
 .project-presentation{
   grid-area: presentation;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .img-container{
