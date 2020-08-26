@@ -47,10 +47,6 @@ anime.timeline({ loop: false })
     delay: (el, i) => 505 + 3 * i
 })
 
-const linksWrapper = document.querySelectorAll('.link');
-// linksWrapper.forEach(link => {
-//   link.innerHTML = link.textContent.replace(/\S/g, "<span class='letter'>$&</span>");})
-// console.log(linksWrapper)
 
 const targets = ['.link', '.title', 'a', '.version']
 anime.timeline({ loop: false })
@@ -63,47 +59,11 @@ anime.timeline({ loop: false })
   })
 
 const headerLinks = document.querySelector('.header-links')
-console.log(headerLinks)
 
-ScrollReveal().reveal('.s2-title', { delay: 500 });
-ScrollReveal().reveal('.container', { delay: 800 });
-ScrollReveal().reveal('.project3-container', { delay: 800 });
-// Wrap every letter in a span
-// const headingWrapper = document.querySelector('h2');
-// headingWrapper.innerHTML = headingWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-// const linkWrapper = document.querySelector('.link');
-// linkWrapper.innerHTML = linkWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-// anime.timeline({ loop: true })
-//   .add({
-//     targets: 'h2 .letter',
-//     scale: [4, 1],
-//     opacity: [0, 1],
-//     translateZ: 0,
-//     easing: "easeOutExpo",
-//     duration: 950,
-//     delay: (el, i) => 70 * i
-//   }).add({
-//     targets: 'h2',
-//     opacity: 0,
-//     duration: 1000,
-//     easing: "easeOutExpo",
-//     delay: 1000
-//   });
-
-// anime.timeline({ loop: true })
-//   .add({
-//     targets: '.link .letter',
-//     scale: [4, 1],
-//     opacity: [0, 1],
-//     translateZ: 0,
-//     easing: "easeOutExpo",
-//     duration: 950,
-//     delay: (el, i) => 70 * i
-//   }).add({
-//     targets: 'h2',
-//     opacity: 0,
-//     duration: 1000,
-//     easing: "easeOutExpo",
-//     delay: 1000
-//   });  
+console.log(window.matchMedia('(min-width: 450px)').matches)
+if (window.matchMedia('(min-width: 450px)').matches){
+  console.log(window.matchMedia('(min-width: 450px)'))
+  ScrollReveal().reveal('.s2-title', { delay: 500 });
+  ScrollReveal().reveal('.container', { delay: 800 });
+  ScrollReveal().reveal('.project3-container', { delay: 800 });
+}
