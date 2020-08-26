@@ -1,4 +1,7 @@
-@media (max-width: 1000px){
+@media(max-width: 450px){
+    .s1{
+        margin:0;
+    }
     .container{
         display: inline;
     }
@@ -18,8 +21,14 @@
     .header-links{
         float: none;
         display: inline;
+        color:black
     }
 
+    .presentation{
+        max-width: 100%;
+        padding-top: 0;
+        margin:0;
+    }
     .project-links{
         display: inline;
     }
