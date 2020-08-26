@@ -52,7 +52,7 @@ const linksWrapper = document.querySelectorAll('.link');
 //   link.innerHTML = link.textContent.replace(/\S/g, "<span class='letter'>$&</span>");})
 // console.log(linksWrapper)
 
-const targets = ['.link', '.title', 'a']
+const targets = ['.link', '.title', 'a', '.version']
 anime.timeline({ loop: false })
   .add({
     targets: targets,

@@ -157,6 +157,18 @@ h2,h3{
   color: white;
 }
 
+.version{
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  color:var(--text-color)
+}
+
+.version p{
+  opacity: 0.5;
+  font-size: small;
+}
 .s1{
     /* scroll-snap-align: start; */
     height: 99%;
