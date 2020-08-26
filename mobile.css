@@ -1,0 +1,26 @@
+@media (max-width: 1000px){
+    .container{
+        display: inline;
+    }
+
+    .project3-container{
+        display: inline;
+    }
+
+    .project-image{
+        float: none;
+        margin: 20px;
+    }
+
+    .title{
+        float: none;
+    }
+    .header-links{
+        float: none;
+        display: inline;
+    }
+
+    .project-links{
+        display: inline;
+    }
+}

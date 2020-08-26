@@ -143,12 +143,6 @@ html, body{
     text-justify: inter-word;
 }
 
-header{
-    text-align: left;
-    align-content: start;
-} 
-
-
 h2,h3,p,a{
     font-family: 'Roboto Mono', monospace;
     color: var(--text-color);
