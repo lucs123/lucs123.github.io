@@ -1,7 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500);
+
 :root{
-    --background-color: #151c1d;
+    --background-color: #16191b;
     --secondary-color: #151c1d;
-    --text-color: #969a9b;
+    --text-color: #e2e6e8;;
 }
 
 /* *{border: 1px solid red;} */
@@ -94,10 +96,14 @@ html, body{
 
 .number{
   color: black;
-  opacity: 0.8;
-  font-weight: bolder;
+  opacity: 0.4;
+  font-weight: 400;
   font-variant-numeric: slashed-zero;
   margin-right: 4px;
+  transition: opacity .3s cubic-bezier(.23,1,.32,1);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+
   /* text-decoration: underline; */
 }
 
@@ -144,7 +150,7 @@ header{
 
 
 h2,h3,p,a{
-    font-family: "Courier New", courier, monospace;
+    font-family: 'Roboto Mono', monospace;
     color: var(--text-color);
     font-weight: lighter;
     margin: 10px;
@@ -184,7 +190,7 @@ h2,h3{
   /* scroll-snap-stop: always; */
   position: relative;
   margin-top: 0;  
-  background-color: var(--secondary-color);
+  background-color: var(--background-color);
   padding-top: 20px;
   padding-bottom: 10px;
 }
@@ -194,12 +200,6 @@ h2,h3{
     position: relative;
 }
 
-/*.s2-title h1{
-    font-weight: bolder;
-    color: #8A8A8A;
-    opacity: 0.3;
-}
-*/
 .container{
   margin: 45px;
   margin-inline-start: 100px;
