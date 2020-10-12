@@ -3,8 +3,6 @@
 <head>
 	<title>Lucas ferreira</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"> -->
-	<!-- <link rel='stylesheet' type='text/css' href="normalize.css"> -->
 	<link rel='stylesheet' type='text/css' href="index.css">
 	<link rel='stylesheet' type='text/css' href="mobile.css">
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
@@ -12,6 +10,10 @@
 		integrity="sha512-LfB+BcvR3zBt7ebVskhSWiSbEUiG3p5EcCprkieldsKhBeR6wpnLi0VpWC2GNgVGWP2n/skO8Bx2oKNjUhXCkw=="
 		crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
 	<section class="s1">
@@ -21,7 +23,7 @@
 			<div class="header-links">
 				<a href="https://github.com/lucs123">Github</a>
 				<a href="https://www.linkedin.com/in/lfcosta-1996/">LinkedIn</a>
-				<a href='#' id="contactBtn" class="contact-btn">Contato</a>
+				<a href='#' id="contactBtn" class="contact-btn"></a>
 			</div>
 			<div class="presentation">
 				<div class="greeting">
@@ -33,16 +35,12 @@
 					</h2>
 				</div>
 				<div>
-					<p class="presentation-text">Meu nome é Lucas ferreira, sou desenvolvedor e estudante de 
-						 engenharia da computação, apaixonado por computadores
-					e programação.
-					Programo nas linguagens javascript e python e nos frameworks React.js e Node.js.
-					</p>
+					<p id="presentationText" class="presentation-text"></p>
 				</div>
 				<div class="project-links">
-					<a class="link" href="#project1"><b class="number">001</b>Projeto 1</a>
-					<a class="link" href="#project2"><b class="number">002</b>Projeto 2</a>
-					<a class="link" href="#project3"><b class="number">003</b>Projeto 3</a>
+                    <a class="link" href="#project1"><b class="number">001</b><span id="project1Link"></span></a>
+					<a class="link" href="#project2"><b class="number">002</b><span id="project2Link"></span></a>
+					<a class="link" href="#project3"><b class="number">003</b><span id="project3Link"></span></a>
 				</div>
 				<div class="version">
 					<p>v1.0</p>
@@ -60,11 +58,7 @@
 				<h3>Delivery Chatbot</h3>
 			</div>
 			<div class="project-presentation">
-				<p>
-					Chatbot criado para delivery de pizzaria, é possivel fazer pedidos, consultar as opções e verificar o status do pedido
-					através do chatbot. Os pedidos são enviados para o painel de controle, onde é possivel alterar o status e finalizar os
-					pedidos.
-				</p>
+				<p></p>
 				<div class="links">
 					<a href="https://painel-delivery.herokuapp.com/">Live</a>
 					<a href="https://github.com/lucs123/delivery-chatbot-client">Source</a>
@@ -88,10 +82,7 @@
 				<h3>Covid Brasil</h3>
 			</div>
 			<div class="project-presentation">
-				<p>
-					Dashboard com dados atualizados sobre casos de covid no Brasil, 
-					é possivel visualizar a progressão de casos por cidade, estado e por todo o país
-				</p>
+				<p></p>
 				<div class="links">
 					<a href="https://covid-brasil.herokuapp.com/">Live</a>
 					<a href="https://github.com/lucs123/covid-brasil">Source</a>
@@ -112,11 +103,7 @@
 				<h3>Visualizador de algoritmos de ordenação</h3>
 			</div>
 			<div class="project-presentation">
-				<p>
-					Série de scripts feitos para visualizar 
-					diferentes tipos de algoritmos de ordenação feitos 
-					utilizando a biblioteca matplotlib. 
-				</p>
+				<p></p>
 				<div class="links">
 					<a href="https://github.com/lucs123/sorting-visualizer-matplotlib">Source</a>
 				</div>
@@ -146,6 +133,6 @@
 		</div>
 	</div>
 	<script src="app.js"></script>
-	<script src="animations.js"></script>
+	<!-- <script src="animations.js"></script> -->
 </body>
 </html>

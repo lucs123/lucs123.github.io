@@ -1,0 +1,14 @@
+{
+    "headerLinks":{
+        "contact":"Contato"
+    },
+    "presentationText":"Meu nome é Lucas ferreira, sou desenvolvedor e estudante de engenharia da computação, apaixonado por computadores e programação. Programo nas linguagens javascript e python e nos frameworks React.js e Node.js.",
+    "projectLinks":{
+        "project1":"Projeto 1",
+        "project2":"Projeto 2",
+        "project3":"Projeto 3"
+    },
+    "projectPresentation1":"Chatbot criado para delivery de pizzaria, é possivel fazer pedidos, consultar as opções e verificar o status do pedido através do chatbot. Os pedidos são enviados para o painel de controle, onde é possivel alterar o status e finalizar os pedidos.",
+    "projectPresentation2":"Dashboard com dados atualizados sobre casos de covid no Brasil, é possivel visualizar a progressão de casos por cidade, estado e por todo o país",
+    "projectPresentation3":"Série de scripts feitos para visualizar diferentes tipos de algoritmos de ordenação feitos utilizando a biblioteca matplotlib."
+}
