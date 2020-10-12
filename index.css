@@ -159,6 +159,18 @@ h2,h3{
   color: white;
 }
 
+.language-selector{
+  position: absolute;
+  margin: 0;
+  bottom: 2%;
+  left: 0;
+  opacity: 0.5;
+  color:var(--text-color)
+}
+
+.language-selector a{
+    margin:0
+}
 .version{
   position: absolute;
   margin: 0;

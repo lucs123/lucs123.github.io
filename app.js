@@ -17,20 +17,26 @@ i18next
   // }
   );
 
+// i18next.changeLanguage('en', (err, t) => {
+//   if (err) return console.log('something went wrong loading', err);
+//   t('key'); // -> same as i18next.t
+// });
+
 const presentationWrapper = document.getElementById('presentationText') 
 const typewriter = new Typewriter(presentationWrapper, {
     loop: false,
     delay: 20
 });
 let count = 0;
+
 function updateContent() {
   document.getElementById('contactBtn').innerHTML = i18next.t('headerLinks.contact');
   document.getElementById('greetingWrapper').innerHTML = i18next.t('greeting');
+  type(i18next.t('presentationText'))
 
   document.getElementById('project1Link').innerHTML = i18next.t('projectLinks.project1');
   document.getElementById('project2Link').innerHTML = i18next.t('projectLinks.project2');
   document.getElementById('project3Link').innerHTML = i18next.t('projectLinks.project3');
-  type(i18next.t('presentationText'))
 
   document.getElementById('project1Presentation').innerHTML = i18next.t('projectPresentation1');
   document.getElementById('project2Presentation').innerHTML = i18next.t('projectPresentation2');
@@ -42,11 +48,15 @@ function updateContent() {
 }
 
 function type(string){
+    console.log(presentationWrapper)
+    if(presentationWrapper.textContent){
+        typewriter.deleteAll(15)
+    }
     typewriter.typeString(string).start()
 }
-// function changeLng(lng) {
-//   i18next.changeLanguage(lng);
-// }
+function changeLng(lng) {
+  i18next.changeLanguage(lng);
+}
 //
 i18next.on('languageChanged', () => {
   updateContent();
@@ -66,3 +76,10 @@ closeBtn.addEventListener('click',()=>{
     contactBg.style['visibility'] = 'hidden' 
 })
 
+const languageSelector = document.getElementById('languageSelector');
+
+languageSelector.addEventListener('click', (event)=>{
+    const lng = event.target.text;
+    i18next.changeLanguage(lng);
+}
+)
