@@ -3,7 +3,7 @@
         "contact":"Contact"
     },
     "greeting": "Hello",
-    "presentationText":"My name is Lucas Ferreira, I'm a developer and computer engineering student, passionate about computers and programming. I develop in python and javascript and in the frameworks React.js and Node.js.",
+    "presentationText":"My name is Lucas Ferreira, I'm a developer and computer engineering student, passionate about computers and programming. I program in python and javascript and in the frameworks React.js and Node.js.",
     "projectLinks":{
         "project1":"Project 1",
         "project2":"Project 2",

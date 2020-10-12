@@ -23,7 +23,6 @@ i18next
   });
 
 languageSelector.addEventListener('click', (event)=>{
-    typewriter.stop()
     const lng = event.target.text;
     const lngList = event.target.parentElement.children
     for(let element of lngList){
@@ -43,7 +42,7 @@ const typewriter = new Typewriter(presentationWrapper, {
 
 function type(string){
     if(presentationWrapper.textContent){
-        typewriter.deleteAll(15)
+        typewriter.deleteAll(10)
     }
     typewriter.typeString(string).start()
 }
@@ -63,10 +62,6 @@ function updateContent() {
   document.getElementById('project3Presentation').innerHTML = i18next.t('projectPresentation3');
 
   document.getElementById('project3Title').innerHTML = i18next.t('project3Title');
-}
-
-function changeLng(lng) {
-  i18next.changeLanguage(lng);
 }
 
 i18next.on('languageChanged', () => {
