@@ -47,6 +47,7 @@ function type(string){
 
 function updateContent() {
   document.getElementById('contactBtn').innerHTML = i18next.t('headerLinks.contact');
+  document.getElementById('contactTitle').innerHTML = i18next.t('headerLinks.contact');
   document.getElementById('greetingWrapper').innerHTML = i18next.t('greeting');
   type(i18next.t('presentationText'))
 
@@ -81,3 +82,9 @@ closeBtn.addEventListener('click',()=>{
     contactBg.style['visibility'] = 'hidden' 
 })
 
+if (window.matchMedia('(min-width: 450px)').matches){
+  console.log(window.matchMedia('(min-width: 450px)'))
+  ScrollReveal().reveal('.s2-title', { delay: 500 });
+  ScrollReveal().reveal('.container', { delay: 800 });
+  ScrollReveal().reveal('.project3-container', { delay: 800 });
+}
