@@ -12,15 +12,18 @@ i18next
     }
     }
   ).then(()=>{
-    const lngList = document.getElementById('languageSelector').children 
-    for(let element of lngList){
-        if(element.text===i18next.language){
-            element.style['font-weight'] = 'bold'
-        }
-    }
+      console.log(i18next.language)
+      const lngList = document.getElementById('languageSelector').children 
+      if(i18next.language==='pt'|| i18next.language==='pt-BR'){
+        lngList[0].style['font-weight'] = 'bold'
+      }  
+      else{
+        lngList[1].style['font-weight'] = 'bold'
+      }
   });
 
 languageSelector.addEventListener('click', (event)=>{
+    typewriter.stop()
     const lng = event.target.text;
     const lngList = event.target.parentElement.children
     for(let element of lngList){
@@ -83,7 +86,6 @@ closeBtn.addEventListener('click',()=>{
 })
 
 if (window.matchMedia('(min-width: 450px)').matches){
-  console.log(window.matchMedia('(min-width: 450px)'))
   ScrollReveal().reveal('.s2-title', { delay: 500 });
   ScrollReveal().reveal('.container', { delay: 800 });
   ScrollReveal().reveal('.project3-container', { delay: 800 });
