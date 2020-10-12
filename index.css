@@ -57,34 +57,6 @@ html, body{
   background: var(--text-color);
 }
 
-.ml11 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  /* padding-right: 0.02em; */
-  padding-bottom: 0.15em;
-}
-
-.ml11 .line {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  height: 80%;
-  width: 1px;
-  background-color: #fff;
-  transform-origin: 0 50%;
-}
-
-.ml11 .line1 { 
-  top: 0; 
-  left: 0;
-}
-
-.ml11 .letter {
-  display: inline-block;
-  line-height: .05em;
-}
-
 .project-links{
   display: flex;
   justify-content: space-between;
@@ -254,6 +226,12 @@ h2,h3{
                         'presentation image';
 }
 
+.siteLinks{
+    font-size: normal;
+    text-decoration: none;
+    color: 1px solid rgba(250,250,250,1);
+    border-bottom: 1px solid rgba(250,250,250,0.4);
+}
 .modal-button{
   color: var(--text-color);
   background-color: transparent;
