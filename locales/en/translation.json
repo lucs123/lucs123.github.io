@@ -1,0 +1,16 @@
+{
+    "headerLinks":{
+        "contact":"Contact"
+    },
+    "greeting": "Hello",
+    "presentationText":"My name is Lucas Ferreira, I'm a developer and computer engineering student, passionate about computers and programming. I develop in python and javascript and in the frameworks React.js and Node.js",
+    "projectLinks":{
+        "project1":"Project 1",
+        "project2":"Project 2",
+        "project3":"Project 3"
+    },
+    "projectPresentation1":"A chatbot created for pizza delivery, it's possible to make requests, consult options and verify the status of the requests throught the chatbot. The requests are then send to the control panel, where it's possible to modify the status and finalize the requests",
+    "projectPresentation2":"Dashboard with data about covid cases in Brazil, It is possible to visualize the progression of cases by city, state and by the entire country.",
+    "projectPresentation3":"Series of scripts created to visualize different types of sorting algorithms, made with matplotlib",
+    "project3Title": "Sorting visualizer"
+}
