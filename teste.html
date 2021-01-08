@@ -7,7 +7,15 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-186900186-1');
+  
+  buttonClick = ()=>{
+    gtag('event', "click, {
+      'event_category': Button click,
+      'event_label': "Hello button",
+      'value': 1
+    });
+  }
 </script>
 </head>
 <h1>Hello</h1>
-<button>hello</button>
+<button onclick="buttonClick()" >hello</button>
