@@ -15,30 +15,30 @@
 
   gtag('config', 'UA-186900186-1');
   
-  buttonClick = ()=>{
-    gtag('event', "click", {
-      'event_category': "Button click",
-      'event_label': "Hello button",
-      'value': 1
-    });
-    console.log("button clicked")
-  }
-    buttonClick2 = ()=>{
-    gtag('event', "click", {
-      'event_category': "Button click",
-      'event_label': "button 2",
-      'value': 3
-    });
-    console.log("button clicked")
-  }
-      buttonClick3 = ()=>{
-    gtag('event', "click 2", {
-      'event_category': "Button click",
-      'event_label': "button 3",
-      'value': 3
-    });
-    console.log("button clicked")
-  }
+  // buttonClick = ()=>{
+  //   gtag('event', "click", {
+  //     'event_category': "Button click",
+  //     'event_label': "Hello button",
+  //     'value': 1
+  //   });
+  //   console.log("button clicked")
+  // }
+  //   buttonClick2 = ()=>{
+  //   gtag('event', "click", {
+  //     'event_category': "Button click",
+  //     'event_label': "button 2",
+  //     'value': 3
+  //   });
+  //   console.log("button clicked")
+  // }
+  //     buttonClick3 = ()=>{
+  //   gtag('event', "click 2", {
+  //     'event_category': "Button click",
+  //     'event_label': "button 3",
+  //     'value': 3
+  //   });
+  //   console.log("button clicked")
+  // }
 </script>
 </head>
 <body>
@@ -49,7 +49,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
 <h1>Hello</h1>
-<button onclick="buttonClick()" >hello</button>
+<button href="./external.html" onclick="buttonClick()" >hello</button>
 <button onclick="buttonClick2()" >hello</button>
 <button onclick="buttonClick3()" >hello</button>
 </body>
