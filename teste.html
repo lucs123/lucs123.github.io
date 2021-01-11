@@ -36,7 +36,8 @@
 
     getValues = ()=>{
         let name = document.getElementById('fname')
-        console.log(name)
+        console.log(name.value)
+        dataLayer.push({'User Name':name.value})
     }
 </script>
 </head>
