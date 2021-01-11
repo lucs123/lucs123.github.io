@@ -33,7 +33,10 @@
   //   });
   //   console.log("button clicked")
   // }
-
+    button2Click = () => {
+        dataLayer.push({'UserName':'Lucas'})
+    }
+    
     getValues = ()=>{
         let name = document.getElementById('fname')
         console.log(name.value)
@@ -50,7 +53,7 @@
 
 <h1>Hello</h1>
 <a href="./external.html" class='external_link' >hello</a>
-<button class='button'>hello</button>
+<button class='button' onclick='button2Click()'>hello</button>
 <button >hello</button>
 <form id="form" onsubmit="getValues()">
     <input type='text' class='fname' id='fname' name='fname' label='Nome'>
