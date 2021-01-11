@@ -34,13 +34,15 @@
   //   console.log("button clicked")
   // }
     button2Click = () => {
-        dataLayer.push({'UserName':'Lucas'})
+        let name = document.getElementById('fname')
+        console.log(name.value)
+        dataLayer.push({'UserName':name.value})
     }
     
     getValues = ()=>{
         let name = document.getElementById('fname')
         console.log(name.value)
-        dataLayer.push({'UserName':'Lucas'})
+        dataLayer.push({'UserName':name.value})
     }
 </script>
 </head>
