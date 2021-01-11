@@ -33,9 +33,10 @@
   //   });
   //   console.log("button clicked")
   // }
-    let form = document.getElementById('form')
+
     getValues = ()=>{
-        console.log(form)
+        let name = document.getElementById('fname')
+        console.log(name)
     }
 </script>
 </head>
@@ -51,7 +52,7 @@
 <button class='button'>hello</button>
 <button >hello</button>
 <form id="form" onsubmit="getValues()">
-    <input type='text' class='fname' name='fname' label='Nome'>
+    <input type='text' class='fname' id='fname' name='fname' label='Nome'>
       <input type="submit" value="Submit">
     </form>
 </body>
